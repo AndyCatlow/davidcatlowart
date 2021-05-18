@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: clamp(auto, 100vw);
+  display: block;
+}
+
+body {
+  font-family: Courgette, sans-serif;
+}
+/* body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  margin-top: 0;
+  margin: 0;
+  grid-auto-rows: 100vh;
+  gap: 2vh;
+  background-color: #666;
+} */
+
+.hero {
+  background-image: linear-gradient(
+      60deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.4) 55%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(./images/jaguarleft.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  height: 100vh;
+  width: 100%;
+
+  grid-row: 1;
+  grid-column: 1;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero--title {
+  font-size: 12vmax;
+  padding-right: 3vw;
+  margin-top: 5vh;
+}
+
+#david {
+  color: rgba(243, 240, 240, 0.9);
+}
+
+#catlow {
+  color: rgba(240, 140, 9, 0.9);
+}
+
+/* not needed if using vmax for font units
+ @media only screen and (min-width: 500px) {
+  .hero--title {
+    font-size: 12vw;
+  }
+} */
+
+.bio {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(images/studio3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  background-attachment: fixed;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    ". . . ."
+    ". t t ."
+    ". b b b"
+    ". b b b";
+}
+
+#bio--title {
+  grid-area: t;
+}
+
+#bio--blurb {
+  grid-area: b;
+  column-count: 2;
+  padding-right: 2vw;
+}
+
+.gallery {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 1fr 75vh 1fr;
+  grid-template-areas:
+    "title"
+    "painting"
+    "blurb";
+  margin-top: 2vh;
+}
+
+.painting--container {
+  grid-area: painting;
+  /* background-image: url(./images/stroll.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%; */
+  z-index: 2;
+  transition: all 500ms ease-in-out 800ms;
+}
+/* 
+.painting {
+  height: 100%;
+  width: minmax(auto, 90vw);
+  border: 5px solid white;
+  border-radius: 5px;
+} */
+
+/* .painting--container:hover {
+  z-index: 5;
+} */
+
+.painting--title {
+  width: 100%;
+  grid-area: title;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.painting--blurb {
+  grid-area: blurb;
+  background-color: rgba(250, 250, 250, 0.3);
+  text-align: end;
+  padding-right: 1em;
+  border-radius: 5px;
+}
+
+.stroll {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(images/strollbw.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.bridge {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(images/bridgebw.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.coot {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(images/cootbw.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}

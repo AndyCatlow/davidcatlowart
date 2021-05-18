@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500px" height="500px" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" >
+<rect id="svgEditorBackground" x="0" y="0" width="500" height="500" style="fill: none; stroke: none;"/>
+<line id="e3_line" x1="0" y1="2" x2="500" y2="2" style="stroke:black;fill:none;stroke-width:5px;"/>
+<line id="e4_line" x1="250" y1="0" x2="250" y2="500" style="stroke:black;fill:none;stroke-width:5px;"/>
+<line id="e5_line" x1="250" y1="0" x2="500" y2="500" style="stroke:black;fill:none;stroke-width:5px;"/>
+<line id="e6_line" x1="498" y1="0" x2="498" y2="500" style="stroke:black;fill:none;stroke-width:5px;"/>
+<line id="e7_line" x1="250" y1="498" x2="500" y2="498" style="stroke:black;fill:none;stroke-width:5px;"/>
+<path d="M250,2a248,248,0,0,0,1,496" style="fill:none;stroke:black;stroke-width:5px;" id="e8_circleArc"/>
+<line id="e10_line" x1="250" y1="0" x2="51" y2="399" style="stroke:black;fill:none;stroke-width:5px;"/>
+<line id="e11_line" x1="125" y1="250.00" x2="375" y2="250.00" style="stroke:black;fill:none;stroke-width:5px;"/>
+<circle id="e12_circle" cx="403" cy="96" style="fill:none;stroke:rgba(232, 232, 207, 0.1);stroke-width:5px;" r="92"/>
+<line id="e13_line" x1="250" y1="500" x2="375" y2="250" style="stroke:black;fill:none;stroke-width:5px;"/>
+</svg>

@@ -1,0 +1,141 @@
+/** ************  */
+/** gallery items */
+/** ************* */
+.gallery__item__container {
+  position: relative;
+  margin-top: 2vh;
+  /* min-height: 100vh; */
+}
+
+.gallery__item__title,
+.gallery__item__description {
+  width: 75%;
+  color: var(--clr-white);
+  background-color: var(--bg-overlay--light);
+  box-shadow: var(--boxShadow1);
+  border-radius: 5px;
+  padding: 1em 2em;
+  margin: 2vw auto;
+}
+
+.gallery__item__title {
+  font-size: clamp(1rem, 3vw, 4rem);
+  text-align: center;
+
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 4;
+}
+
+.gallery__item__description {
+  font-size: clamp(1rem, 3vw, 2rem);
+
+  max-width: 60ch;
+}
+
+/* hide filler items */
+.filler {
+  display: none;
+}
+
+/*? **********************  */
+/*? for non-mobile screens  */
+/*? change to grid gallery  */
+/*? *********************** */
+@media screen and (min-width: 400px) {
+  /*   */
+
+  /*? grid layout */
+
+  .gallery {
+    display: grid;
+    width: 95vw;
+    min-height: 100vh;
+    margin: auto auto;
+
+    grid-template-columns: repeat(auto-fit, 20vw);
+    grid-auto-rows: 20vw;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(20vw, 25vw));
+    grid-auto-rows: minmax(20vw, 25vw); */
+
+    grid-auto-flow: dense;
+    gap: 1vw;
+    padding: 1vw;
+
+    justify-content: center;
+  }
+
+  .gallery__item__container {
+    margin-top: 0;
+    min-height: fit-content;
+    max-height: fit-content;
+  }
+
+  .gallery__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+  }
+
+  /*? painting title drops */
+
+  .gallery__item__title,
+  .gallery__item__description {
+    opacity: 0;
+    font-size: 1.5vw;
+    transition: all 0.5s ease-in-out 0.3s;
+  }
+
+  .gallery__item:hover .gallery__item__title,
+  .gallery__item:hover .gallery__item__description {
+    opacity: 1;
+    animation: move-down 0.3s linear 0.3s;
+    /* padding: 0 1em; */
+  }
+  .gallery__image img {
+    object-fit: cover;
+    height: 100%;
+  }
+  /* .gallery__image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out 0.3s;
+  } */
+
+  /* .gallery__item:hover .gallery__image img {
+    transform: scale(1.3);
+  } */
+
+  /*? painting grid sizes */
+
+  .portrait {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .landscape {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .square {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .filler {
+    display: block;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

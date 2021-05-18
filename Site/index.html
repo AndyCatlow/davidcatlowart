@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gallery of David Catlow, Artist</title>
+    <meta
+      name="description"
+      content="An online gallery for the artwork of David Catlow. Showcasing watercolours, acrylic pieces, sketches and nature studies."
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="modal.js" defer></script>
+  </head>
+  <body>
+    <!-- nav menu -->
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+      name="nav-toggle"
+      aria-label="nav menu"
+    />
+    <nav>
+      <!-- Fixed gallery button -->
+      <a href="#gallery"
+        ><button class="nav--btn" aria-label="top">
+          <svg
+            class="svg-icon"
+            id="up-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="40"
+            height="30"
+            overflow="visible"
+            stroke-width="6"
+            stroke="#000"
+            stroke-linecap="round"
+          >
+            <line x1="0" y1="25" x2="20" y2="5"></line>
+            <line x1="40" y1="25" x2="20" y2="5"></line>
+          </svg>
+
+          <br />To the <br />
+          top
+        </button></a
+      >
+      <a href="./Pages/sketches.html"
+        ><button class="nav--btn gallery__return" aria-label="sketches">
+          <svg
+            class="svg-icon"
+            version="1.1"
+            id="palette"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #000;
+              }
+            </style>
+            <g id="XMLID_2_">
+              <path
+                id="XMLID_9_"
+                class="st0"
+                d="M255.5,0.5C114.3,0.5,0,114.8,0,256s114.3,255.5,255.5,255.5c23.2,0,42.7-18.6,42.7-42.7
+		c0-11.2-3.7-21.4-11.2-28.8c-6.5-7.4-10.2-17.7-10.2-27.9c0-23.2,18.6-42.7,42.7-42.7h50.2c78.1,0,142.2-63.2,142.2-142.2
+		C511.1,101.7,396.8,0.5,255.5,0.5z M99.4,256c-23.2,0-42.7-18.6-42.7-42.7c0-23.2,18.6-42.7,42.7-42.7s42.7,18.6,42.7,42.7
+		S122.7,256,99.4,256z M184.9,142.6c-23.2,0-42.7-18.6-42.7-42.7s18.6-42.7,42.7-42.7s42.7,18.6,42.7,42.7S208.1,142.6,184.9,142.6z
+		 M326.2,142.6c-23.2,0-42.7-18.6-42.7-42.7s18.6-42.7,42.7-42.7s42.7,18.6,42.7,42.7S350.3,142.6,326.2,142.6z M411.6,256
+		c-23.2,0-42.7-18.6-42.7-42.7c0-23.2,18.6-42.7,42.7-42.7s42.7,18.6,42.7,42.7S434.9,256,411.6,256z"
+              />
+            </g>
+          </svg>
+
+          <br />Sketch <br />
+          book
+        </button></a
+      >
+
+      <a href="#enquiry"
+        ><button class="nav--btn" aria-label="enquiry">
+          <svg
+            class="svg-icon"
+            id="envelope"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="30"
+            height="30"
+            overflow="visible"
+            stroke-width="6"
+            stroke="#000"
+            stroke-linecap="round"
+          >
+            <line x1="0" y1="5" x2="40" y2="5"></line>
+            <line x1="0" y1="5" x2="0" y2="35"></line>
+            <line x1="0" y1="35" x2="40" y2="35"></line>
+            <line x1="40" y1="5" x2="40" y2="35"></line>
+            <line x1="3" y1="8" x2="20" y2="25"></line>
+            <line x1="37" y1="8" x2="20" y2="25"></line>
+          </svg>
+          <br />Enquire
+        </button></a
+      >
+
+      <a href="#gallery--end"
+        ><button class="nav--btn" aria-label="bottom">
+          <svg
+            class="svg-icon"
+            id="down-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="40"
+            height="30"
+            stroke-width="6"
+            stroke="#000"
+            stroke-linecap="round"
+          >
+            <line x1="0" y1="5" x2="20" y2="25"></line>
+            <line x1="40" y1="5" x2="20" y2="25"></line>
+          </svg>
+
+          <p>To the end</p>
+        </button></a
+      >
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label"
+      ><svg
+        id="hamburger"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 40 40"
+        width="30"
+        height="30"
+        overflow="visible"
+        stroke-width="6"
+        stroke="#ddd"
+        stroke-linecap="round"
+      >
+        <line x1="0" y1="5" x2="40" y2="5"></line>
+        <line x1="0" y1="20" x2="40" y2="20"></line>
+        <line x1="0" y1="35" x2="40" y2="35"></line>
+      </svg>
+      <svg
+        id="hamburger--close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 40 40"
+        width="30"
+        height="30"
+        overflow="visible"
+        stroke="whitesmoke"
+        stroke-width="6"
+        stroke-linecap="round"
+      >
+        <line x1="0" y1="0" x2="40" y2="40" />
+        <line x1="40" y1="0" x2="0" y2="40" />
+      </svg>
+    </label>
+
+    <!-- hero section -->
+    <header class="hero">
+      <picture>
+        <source
+          srcset="./Images/BackgroundImages/jaguarleftheadvig.webp"
+          type="image/webp"
+          media="(min-width: 500px)"
+        />
+        <img
+          id="hero_img"
+          src="./Images/BackgroundImages/jaguarleftheadvig.jpg"
+          alt="Jaguar"
+        />
+      </picture>
+      <h1 class="hero__title">
+        <span id="david">David</span><br /><span id="catlow">Catlow</span>
+      </h1>
+    </header>
+
+    <!-- intro section -->
+    <section class="intro">
+      <div class="intro__text">
+        <picture>
+          <source
+            srcset="./Images/BackgroundImages/david_profile_small.webp"
+            type="image/webp" />
+          <source
+            srcset="./Images/BackgroundImages/jpg/david_profile_small.jpg"
+            type="image/jpeg" />
+          <img
+            src="./Images/BackgroundImages/jpg/david_profile_small.jpg"
+            alt="David Catlow, Artist"
+            id="intro__picture"
+        /></picture>
+
+        <p>
+          Thank you for visiting my online gallery. I hope that you like the
+          artwork on show. <br />
+          I am a self-taught artist living in South Derbyshire. I like to paint
+          landscapes, birds and animals, particularly when I can paint a bird or
+          animal in its natural setting. I work in several media: acrylics,
+          watercolours, pen and ink, pencil, sometimes oils. I love the
+          versatility of acrylics and much of my work is now done in this
+          medium.
+          <br />
+          The inspiration for my paintings comes from observing the natural
+          world around me, when I'm cycling, walking and birdwatching, combining
+          sketches and photographs to produce the final paintings.
+          <br />
+          <br />
+          Many of the works shown are for sale. Please contact me using the form
+          on this site if you are interested in purchasing anything.
+          <br />
+          <br />
+          NB All measurements given are approximate and do not include any
+          frames.
+          <br />
+          <br />
+          Please enjoy the gallery below and click on any images to enlarge
+          them. Click again to shrink them back down.
+        </p>
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="gallery" id="gallery">
+      <!-- first gallery item -->
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Old_Sawmill.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Old_Sawmill.jpg"
+                alt="The Old Sawmill"
+                data-original="Old_Sawmill.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>The Old Sawmill</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm<br />
+                Acrylic on canvas board
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Springtime_Canal.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Springtime_Canal.jpg"
+                alt="Springtime on the Staffs and Worcs Canal"
+                data-original="Springtime_Canal.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Springtime on the Staffs and Worcs Canal</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 38.5 x 29 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container span2">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <img
+              src="./Images/Paintings/Preview/Heading_Home.jpg"
+              alt="Heading Home"
+              data-original="Heading_Home.jpg"
+            />
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Heading Home</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size : 50 x 40 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container span2">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/African_Fish_Eagle.webp"
+                type="image/webp"
+              />
+              <!-- <source
+                srcset="./Images/Paintings/Preview/African_Fish_Eagle.jpg"
+              /> -->
+              <img
+                src="./Images/Paintings/Preview/African_Fish_Eagle.jpg"
+                alt="African Fish Eagle"
+                data-original="African_Fish_Eagle.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>African Fish Eagle<br />(Rift Valley, Kenya)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size : 65 x 40 cm <br />
+                Acrylic on primed hardboard panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/After_the_Storm.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Paintings/Preview/After_the_Storm.jpg"
+                type="image/jpg"
+              />
+              <img
+                src="./Images/Paintings/Preview/After_the_Storm.jpg"
+                alt="After the Storm"
+                data-original="After_the_Storm.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>After the Storm<br />(Llanrwst, Wales)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 40 x 30 cm<br />
+                Acrylic on canvas panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Cliffs_Cader_Idris.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Cliffs_Cader_Idris.jpg"
+                alt="Cliffs near Cader Idris"
+                data-original="Cliffs_Cader_Idris.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Cliffs near Cader Idris<br />(Wales)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Waiting_for_Spring.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Waiting_for_Spring.jpg"
+                alt="Waiting For Spring"
+                data-original="Waiting_for_Spring.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Waiting For Spring</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold <br />
+                Acrylics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Cottages_at_Rainow_Low.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Cottages_at_Rainow_Low.jpg"
+                alt="Cottages at Rainow Low"
+                data-original="Cottages_at_Rainow_Low.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Cottages at Rainow Low<br />(Cheshire)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 49 x 30 cm<br />
+                Acrylic on canvas panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Jenkin_Chapel.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Jenkin_Chapel.jpg"
+                alt="Jenkin Chapel"
+                data-original="Jenkin_Chapel.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                Jenkin Chapel <br />
+                (Derbyshire)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 35 x 25 cm<br />
+                Graphite pencil on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Freedom.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Freedom.jpg"
+                alt="Freedom"
+                data-original="Freedom.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Freedom<br />(Sound of Mull, Scotland)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 45 x 35 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Great_Northern_Divers.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Great_Northern_Divers.jpg"
+                alt="Great Northern Divers"
+                data-original="Great_Northern_Divers.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                Great Northern Divers <br />
+                (Lochindorb, Cairngorm, Scotland)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 40 x 30 cm <br />
+                Acrylic on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Hough_Hole.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Hough_Hole.jpg"
+                alt="Hough Hole"
+                data-original="Hough_Hole.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Hough Hole<br />(Rainow, Cheshire)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 32 x 23 cm <br />
+                Graphite pencil on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Kingfisher.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Kingfisher.jpg"
+                alt="Kingfisher"
+                data-original="Kingfisher.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Kingfisher <br />(Monsal Dale, Derbyshire)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold <br />
+                Acrylic
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container landscape">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/In_Retirement.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/In_Retirement.jpg"
+                alt="In Retirement"
+                data-original="In_Retirement.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>In Retirement<br />(Isle of Mull, Scotland)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 49 x 34 cm <br />
+                Watercolour on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Over-wintering_snipe.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Over-wintering_snipe.jpg"
+                alt="Over-wintering Snipe"
+                data-original="Over-wintering_snipe.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Over-wintering Snipe</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold <br />
+                Acrylics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container portrait">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="
+                  ./Images/Paintings/Preview/Pembrokeshire_Peregrines.webp
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Pembrokeshire_Peregrines.jpg"
+                alt="Pair of Pembrokeshire Peregrines"
+                data-original="Pembrokeshire_Peregrines.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Pair of Pembrokeshire Peregrines</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 70 x 40 cm<br />
+                Acrylic on primed hardboard panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container portrait">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Lakeland_Post.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Lakeland_Post.jpg"
+                alt="Lakeland Post"
+                data-original="Lakeland_Post.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Lakeland Post</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 32 x 22 cm <br />
+                Watercolour on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Morning_Flight.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Morning_Flight.jpg"
+                alt="Morning Flight"
+                data-original="Morning_Flight.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                Morning Flight<br />
+                (Barnacle Geese)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 52 x 41 cm <br />
+                Acrylic on primed hardboard panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Newlands_Valley.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Newlands_Valley.jpg"
+                alt="Newlands Valley"
+                data-original="Newlands_Valley.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Newlands Valley <br />(Lake District)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold <br />
+                Acrylics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Out_Shadows.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Out_Shadows.jpg"
+                alt="Out of the Shadows"
+                data-original="Out_Shadows.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Out of the Shadows<br />(Pantanal, Brazil)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/The_Referee.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/The_Referee.jpg"
+                alt="The Referee"
+                data-original="The_Referee.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                The Referee<br />
+                (Goldfinches)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 48 x 39 cm <br />
+                Acrylic on watercolour paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container portrait">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Winter_Feeding.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Winter_Feeding.jpg"
+                alt="Winter Feeding"
+                data-original="Winter_Feeding.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Winter Feeding<br />(Kerridge, Cheshire)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 64 x 44 cm <br />
+                Watercolour on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Forest_Edge.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Forest_Edge.jpg"
+                alt="Forest Edge"
+                data-original="Forest_Edge.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                Forest Edge <br />
+                (Cannock Chase)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container span2">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Kinder_reservoir.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Kinder_reservoir.jpg"
+                alt="Kinder Reservoir and Plateau"
+                data-original="Kinder_reservoir.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Kinder Reservoir and Plateau</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold<br />
+                Oil
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container landscape">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/moorhen.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/moorhen.jpg"
+                alt="The Secret World of the Moorhen"
+                data-original="moorhen.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>The Secret World of the Moorhen</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 54 x 40 cm <br />
+                Acrylic on primed hardboard panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container landscape">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/waverock.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/waverock.jpg"
+                alt="Church Rock"
+                data-original="waverock.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Church Rock<br />(Pembrokeshire)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas panel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container square">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/lighthouse.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/lighthouse.jpg"
+                alt="Ornsay Lighthouse"
+                data-original="lighthouse.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Ornsay Lighthouse<br />(from Isle of Skye, Scotland)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 57 x 47 cm <br />
+                Watercolour on paper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Canada_Geese.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Canada_Geese.jpg"
+                alt="Canada Geese"
+                data-original="Canada_Geese.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Canada Geese</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Sold <br />
+                Acrylics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container landscape">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/vineyard.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/vineyard.jpg"
+                alt="Vineyard"
+                data-original="vineyard.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Vineyard<br />(Stellenbosch, South Africa)</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 45 x 35 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Evening_Pasture.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Evening_Pasture.jpg"
+                alt="Evening Pasture"
+                data-original="Evening_Pasture.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>Evening Pasture</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item__container" id="gallery--end">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source
+                srcset="./Images/Paintings/Preview/Woodland_Glade.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="./Images/Paintings/Preview/Woodland_Glade.jpg"
+                alt="Woodland Glade"
+                data-original="Woodland_Glade.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>
+                Autumn Splendour <br />
+                (Calke Abbey, Derbyshire)
+              </h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: 50 x 40 cm <br />
+                Acrylic on canvas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <img src="" alt="" class="modal__image" />
+        <!-- <div class="modal__caption"></div> -->
+      </div>
+
+      <!-- new item template -->
+      <!-- <div class="gallery__item__container">
+        <div class="gallery__item">
+          <div class="gallery__item__image">
+            <picture>
+              <source srcset="./Images/Paintings/Preview/Woodland_Glade.webp" type="image/webp"/>
+              
+              <img
+              src="./Images/Paintings/Preview/Woodland_Glade.jpg"
+              alt="Woodland Glade"
+              data-original="Woodland_Glade.jpg"
+            />
+            </picture>
+          </div>
+          <div class="gallery__item__text">
+            <div class="gallery__item__title">
+              <h2>title</h2>
+            </div>
+            <div class="gallery__item__description">
+              <p>
+                Size: <br>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- form -->
+    <footer>
+      <div id="enquiry">
+        <h3 class="enquiry__text">Contact Me</h3>
+        <p>To enquire about any of my paintings please use this form:</p>
+      </div>
+      <form
+        name="enquiry"
+        method="POST"
+        data-netlify="true"
+        action="./Pages/success.html"
+      >
+        <div class="form--left">
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="field">
+            <label for="email"
+              >Please provide an e-mail address for me to reach you at:</label
+            >
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="paintingName"
+              >Which painting(s) are you interested in?</label
+            >
+            <input
+              type="text"
+              list="paintings-list"
+              name="paintingName"
+              id="paintingName"
+            />
+            <datalist id="paintings-list">
+              <option value="The Old Sawmill"></option>
+              <option value="Springtime on the Staffs and Worcs Canal"></option>
+              <option value="Heading Home"></option>
+              <option value="African Fish Eagle"></option>
+              <option value="After the Storm"></option>
+              <option value="Cliffs near Cader Idris"></option>
+              <option value="Waiting For Spring"></option>
+              <option value="Cottages at Rainow Low"></option>
+              <option value="Jenkin Chapel"></option>
+              <option value="Freedom"></option>
+              <option value="Great Northern Divers"></option>
+              <option value="Hough Hole"></option>
+              <option value="Kingfisher"></option>
+              <option value="In Retirement"></option>
+              <option value="Over-wintering Snipe"></option>
+              <option value="Pair of Pembrokeshire Peregrines"></option>
+              <option value="Lakeland Post"></option>
+              <option value="Morning Flight"></option>
+              <option value="Newlands Valley"></option>
+              <option value="Out of the Shadows"></option>
+              <option value="The Referee"></option>
+              <option value="Winter Feeding"></option>
+              <option value="Forest Edge"></option>
+              <option value="Kinder Reservoir and Plateau"></option>
+              <option value="The Secret World of the Moorhen"></option>
+              <option value="Church Rock"></option>
+              <option value="Ornsay Lighthouse"></option>
+              <option value="Canada Geese"></option>
+              <option value="Vineyard"></option>
+              <option value="Evening Pasture"></option>
+              <option value="Autumn Splendour"></option>
+            </datalist>
+          </div>
+          <div class="field">
+            <label for="phone"
+              >If you'd like me to call you please provide your number
+              here:</label
+            >
+            <input type="tel" name="phone" id="phone" />
+          </div>
+        </div>
+
+        <div class="form--right">
+          <div class="field">
+            <label for="message"
+              >Please provide any extra information or ask any questions here.
+              I'll get in touch as soon as I can.</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              minlength="20ch"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" value="Send Message" class="button primary">
+              Enquire
+            </button>
+          </div>
+        </div>
+      </form>
+      <p id="andy_link">
+        Designed and built by
+        <!-- <a href="andycatlow.dev" target="_blank" >-->
+        Andy Catlow
+        <!-- <img src="./Images/catlow_logo_black.svg" alt="Andy Catlow Logo" /> -->
+        <!-- </a> -->
+      </p>
+    </footer>
+  </body>
+</html>
